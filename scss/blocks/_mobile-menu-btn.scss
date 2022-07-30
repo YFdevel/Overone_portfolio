@@ -1,0 +1,12 @@
+.mobile-menu-btn {
+  display: none;
+  position: absolute;
+  width: 42px;
+  top: 50px;
+  right: 10px;
+  z-index: 1;
+
+  @include sm-device {
+    display: block;
+  }
+}

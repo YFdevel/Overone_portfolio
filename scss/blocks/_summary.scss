@@ -1,0 +1,38 @@
+.summary-section {
+  padding: 40px 0 104px;
+}
+
+.summary-foto__img {
+  min-height: 350px;
+}
+
+.summary-desc {
+  @include flex(space-between, flex-end);
+  margin-bottom: 46px;
+
+  @include sm-device {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 47px;
+    font-weight: 700px;
+    width: 133px;
+  }
+
+  &__text {
+    width: 155px;
+    span {
+      display: block;
+    }
+  }
+
+  &__links {
+    transform: rotate(-180deg);
+
+    @include sm-device {
+      display: none;
+    }
+  }
+}

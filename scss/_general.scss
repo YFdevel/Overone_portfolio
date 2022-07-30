@@ -1,0 +1,99 @@
+body,
+html {
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 500;
+  color: $main-color;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: $nav-link-color;
+
+  &:hover {
+    color: $nav-link-hover-color;
+  }
+
+  &:active {
+    color: $nav-link-active-color;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  @extend %img-settings;
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+
+  @include md-device {
+    max-width: 720px;
+  }
+
+  @include sm-device {
+    max-width: 540px;
+  }
+
+  @include xs-device {
+    width: 95%;
+  }
+
+  @include small-screen {
+    max-width: 100%;
+  }
+}
+
+.section-title {
+  font-size: 34px;
+  line-height: 42px;
+  color: #070707;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+
+  &_skills {
+    margin-bottom: 69px;
+  }
+
+  &_portfolio {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.about-section {
+  background-color: $about-me-background-color;
+  padding: 120px 0 107px;
+}
+
+.text-about {
+  text-align: center;
+  font-weight: 500;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  span {
+    display: block;
+  }
+}

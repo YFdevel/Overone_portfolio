@@ -1,0 +1,23 @@
+.langs {
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+
+  &__item {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700px;
+
+    &_active {
+      color: $nav-link-active-color;
+    }
+
+    &:first-child::after {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 2px;
+      background-color: #000;
+      margin: 5px 0;
+    }
+  }
+}

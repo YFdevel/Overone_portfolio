@@ -1,0 +1,31 @@
+.nav {
+  @include sm-device {
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  &__list {
+    padding: 33px 0 32px;
+    border-bottom: 1px solid $nav-list-border-color;
+    @include flex(space-between);
+
+    @include sm-device {
+      height: 250px;
+      flex-direction: column;
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    &_active {
+      color: $nav-link-active-color;
+    }
+  }
+}
+
+.nav_desktop {
+  @include sm-device {
+    display: none;
+  }
+}
