@@ -499,7 +499,8 @@ button:hover {
 .mobile-menu-wrapper {
   display: none;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  min-height: 420px;
   position: absolute;
   top: 0;
   right: 0;
